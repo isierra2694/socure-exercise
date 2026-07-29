@@ -1,0 +1,1 @@
+export { EventsAnimation } from './component';

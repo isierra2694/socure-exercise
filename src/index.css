@@ -1,0 +1,69 @@
+:root {
+  --primary-signal: #fc5b1c;
+  --primary-pitch: #050505;
+  --primary-ash: #1a1817;
+  --primary-ash-5: #fbf9f7;
+  --primary-ash-80: #473E39;
+  --primary-white: #ffffff;
+  --primary-white-80: #ffffffcc;
+  --sans: 'Geist';
+  --mono: 'Geist Mono';
+
+  font: 18px/145% var(--sans);
+  color: var(--primary-white);
+  background: var(--primary-pitch);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 95%;
+  letter-spacing: -3%;
+  font-weight: 425;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 1.5%;
+  font-weight: 420;
+  margin: 0;
+}
+
+p.mono {
+  font-family: 'Geist Mono';
+  line-height: 145%;
+  letter-spacing: 8%;
+}
+
+section {
+  max-width: 1348px;
+  margin: 56px auto;
+  width: 100%;
+  padding: 0 18px;
+}

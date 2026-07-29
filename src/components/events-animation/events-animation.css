@@ -1,0 +1,45 @@
+.loader {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--primary-white);
+}
+
+.track {
+  position: absolute;
+  display: flex;
+  gap: 5.86px;
+  align-items: center;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: move 1s ease-in-out infinite;
+}
+
+.diamond {
+  width: 14.1421px;
+  height: 14.1421px;
+  background-color: var(--primary-pitch);
+  transform: rotate(45deg);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translate(3px, -50%);
+  }
+  to {
+    transform: translate(23px, -50%);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(0.7);
+  }
+}

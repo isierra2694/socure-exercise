@@ -1,0 +1,44 @@
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 32px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  width: min(100vw, 1312px);
+  min-width: 900px;
+  padding: 0;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  height: 28px;
+  width: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}

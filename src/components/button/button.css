@@ -1,0 +1,37 @@
+.button {
+  padding: 11px 13px;
+  border-radius: 1px;
+  border-width: 1px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 460;
+  line-height: 100%;
+  box-shadow: none;
+  border-style: solid;
+  cursor: pointer;
+  letter-spacing: 1%;
+}
+
+.button.primary {
+  background-color: var(--primary-signal);
+  color: var(--primary-pitch);
+  border-color: var(--primary-signal);
+}
+
+.button.primary-dark {
+  background-color: var(--primary-ash);
+  color: var(--primary-white);
+  border-color: var(--primary-ash-80);
+}
+
+.button.secondary {
+  background-color: var(--primary-ash-80);
+  color: var(--primary-white);
+  border-color: var(--primary-ash-80);
+}
+
+.button.secondary-dark {
+  background-color: var(--primary-pitch);
+  color: var(--primary-white);
+  border-color: var(--primary-ash-80);
+}
