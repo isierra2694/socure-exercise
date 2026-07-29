@@ -11,9 +11,9 @@ npm install
 ```bash
 npm run dev
 ```
-The application should be hosted at the URL shown in the terminal, typically `https://localhost:5173`.
+The application should be hosted at the URL shown in the terminal, typically `http://localhost:5173`.
 
-# Build
+## Build
 ```bash
 npm run build
 ```
